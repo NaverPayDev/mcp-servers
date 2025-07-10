@@ -37,7 +37,8 @@
         "@naverpay/eslint-config": "^2.3.0",
         "@naverpay/eslint-plugin": "^2.2.0",
         "@naverpay/markdown-lint": "^0.0.3",
-        "@naverpay/prettier-config": "^1.0.1"
+        "@naverpay/prettier-config": "^1.0.1",
+        "typescript": "^5.8.3"
     },
     "packageManager": "pnpm@10.12.3"
 }

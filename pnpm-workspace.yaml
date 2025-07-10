@@ -1,0 +1,8 @@
+packages:
+    - ./packages/*
+publicHoistPattern:
+    - '*eslint*'
+    - '*prettier*'
+onlyBuiltDependencies:
+    - '@naverpay/editorconfig'
+    - '@naverpay/markdown-lint'
