@@ -1,0 +1,43 @@
+{
+    "name": "naver-mcp-servers",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "mcp",
+        "server"
+    ],
+    "license": "ISC",
+    "author": "@naverpay/frontend",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint '**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,yaml,yml,json}'",
+        "lint:fix": "eslint '**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,yaml,yml,json}' --fix",
+        "markdownlint": "markdownlint '**/*.md'",
+        "markdownlint:fix": "markdownlint --fix '**/*.md'",
+        "prettier": "prettier --check '**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json,yaml,yml,scss,css}'",
+        "prettier:fix": "prettier --write '**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json,yaml,yml,scss,css}'"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,vue}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,css,scss,less,html}": [
+            "prettier --write"
+        ],
+        "*.md": [
+            "markdownlint --fix",
+            "prettier --write"
+        ]
+    },
+    "devDependencies": {
+        "@naverpay/commithelper-go": "^1.0.1",
+        "@naverpay/editorconfig": "^0.0.4",
+        "@naverpay/eslint-config": "^2.3.0",
+        "@naverpay/eslint-plugin": "^2.2.0",
+        "@naverpay/markdown-lint": "^0.0.3",
+        "@naverpay/prettier-config": "^1.0.1"
+    },
+    "packageManager": "pnpm@10.12.3"
+}

@@ -1,0 +1,64 @@
+{
+    // 저장 시 자동 포맷팅
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    // ESLint 설정
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+
+    // 기본 포맷터를 Prettier로 설정
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // 파일별 포맷터 설정
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // EditorConfig 설정 활성화
+    "editorconfig.generateAuto": false,
+
+    // 줄 바꿈 문자 설정
+    "files.eol": "\n",
+
+    // 파일 끝에 빈 줄 추가
+    "files.insertFinalNewline": true,
+
+    // 줄 끝 공백 제거
+    "files.trimTrailingWhitespace": true,
+
+    // 탭 크기 설정
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+
+    // 세로 눈금자 (최대 줄 길이 표시)
+    "editor.rulers": [80, 120],
+
+    // 파일 연결 설정
+    "files.associations": {
+        "*.mjs": "javascript"
+    },
+
+    // 확장프로그램 권장사항
+    "extensions.recommendations": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "davidanson.vscode-markdownlint"
+    ]
+}

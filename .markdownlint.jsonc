@@ -1,0 +1,21 @@
+{
+    // NaverPay Markdown 린트 설정을 확장
+    "extends": "@naverpay/markdown-lint",
+
+    // 프로젝트별 커스터마이징
+    "line-length": {
+        "line_length": 120,
+        "code_blocks": false,
+        "tables": false
+    },
+
+    // 특정 규칙 비활성화 (필요에 따라 조정)
+    "MD013": false, // line length
+    "MD033": false, // inline HTML
+    "MD041": false, // first line in file should be a top-level heading
+
+    // 한국어 문서를 고려한 설정
+    "MD024": {
+        "allow_different_nesting": true
+    }
+}

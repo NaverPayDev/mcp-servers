@@ -1,0 +1,8 @@
+# build
+.next
+
+# package
+pnpm-lock.yaml
+
+# markdownlint
+**/*.md

@@ -1,0 +1,36 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+# 파일 인코딩은 UTF-8
+charset = utf-8
+# 새줄 문자는 LF
+end_of_line = lf
+# 파일의 마지막에는 새줄
+insert_final_newline = true
+# 공백으로 줄을 끝내지 않음
+trim_trailing_whitespace = true
+
+[*.{js,jsx,ts,tsx,vue}]
+# 들여쓰기는 스페이스 2개 사용
+indent_style = space
+indent_size = 2
+
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{java,kt}]
+# 하드탭 사용 (네이버 자바 컨벤션 기준)
+indent_style = tab
+# 탭의 크기는 4개의 스페이스
+indent_size = 4
+tab_width = 4
+
+[Makefile]
+indent_style = tab
